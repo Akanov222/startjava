@@ -3,55 +3,64 @@ import java.time.LocalDate;
 
 public class VariableNamesTheme {
     public static void main(String[] args) {
-
+        // цифра
         int number = 12;
+        // сумма чисел
         int sumNumbers = 2 + 3;
+        // произведение цифр
         int productOfNumbers = 8 * 14;
+        // максимальное число
         byte maxNumber = Byte.MAX_VALUE;
+        // количество десятков
         int teansNumbers = 8;
+        // вес собаки
         float dogWeight = 10.3f;
+        // исходное число
         int originalNumber = 0;
+        // процент по вкладу
         float interestOnDeposit = 10.5f;
+        // (переменная хранит символ) &
         char specialSimbol = '\u0026';
+        // код ошибки
         int errorCode = 404;
+        // тип сообщения
         String massegeType = "string";
+        // число нулей
         int zerosNumbers = 18;
+        // уникальное число
         double uniqueNumber = 85987715.56632478855174d;
+        // случайное число
         LocalTime randomNumber = LocalTime.now();
+        // математическое выражение
         float mathExpression = (2^3+18-4)^(-3)/631;
+        // выбор чего-либо
         String chooseSomth = "Шоколад или мороженое";
-        int gamePoints = 21;
+        // выбор чего-либо
+        int numberPoints = 21;
+        // максимальная длина строки
         int maxLength = (int)Integer.MAX_VALUE;
+        // пункт меню
         int menuItem = 4;
+        // стоимость кофе на вынос
         float costCoffeeToGo = 0.99f;
+        // дата начала (чего-либо)
         LocalDate startDate = LocalDate.of(2007, 6, 19);
+        // окончание диапазона
         int rangeEnd = 9;
+        // полное имя работника месяца
         String fullNameMonthEmployee = "Ivanov Petr Sidorovich";
+        // заголовок электронной книги
         String ebookTitle = "Clean code";
+        // размер
         String size = "0.52 MB";
+        // вместимость (чего-либо)
         String capacity = "1.0 TB";
+        // счетчик
         float counter = 19.95f;
+        // путь до файла
         String pathFile = "C:\\Users\\Sinbad\\Documents\\Работа_Аканов\\StartJava\\1_Lesson_1";
+        // количество чисел в каждой строке
         int numbSumEachLine = 8;
-
-        boolean isEqualHundred = true;
-        boolean isCompOn = true;
-        boolean isEqualNumbsInIt = true;
-        boolean isCreatSomth = true;
-        boolean isEmptySomth = true;
-        boolean isActiveSomth = true;
-        boolean isItNew = true;
-        boolean isEmailValid = true;
-        boolean isUniqStringInIt = true;
-        boolean isNumbSumEachLine = true;
-
-        String uuid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11";
-        String drum = "SK Hynix";
-        String hdd = "0.5 TB";
-        String http = "http//topjava.ru/";
-        String url = "http//topjava.ru/";
-        String uci = "IK9478H94I0";
-        String ascii = "American standard code for information interchange";
 
         System.out.println("1. цифра = " + number);
         System.out.println("2. сумма чисел = " + sumNumbers);
@@ -69,7 +78,7 @@ public class VariableNamesTheme {
         System.out.println("14. случайное число = " + randomNumber);
         System.out.println("15. математическое выражение = " + mathExpression);
         System.out.println("16. выбор чего-либо = " + chooseSomth);
-        System.out.println("17. количество очков (в игре) = " + gamePoints);
+        System.out.println("17. количество очков (в игре) = " + numberPoints);
         System.out.println("18. максимальная длина строки = " + maxLength);
         System.out.println("19. пункт меню = " + menuItem);
         System.out.println("20. стоимость кофе на вынос = " + costCoffeeToGo);
@@ -83,23 +92,58 @@ public class VariableNamesTheme {
         System.out.println("28. путь до файла = " + pathFile);
         System.out.println("29. количество чисел в каждой строке = " + numbSumEachLine + "\n");
 
-        System.out.println("1. сотни равны? = " + isEqualHundred);
-        System.out.println("2. компьютер включен? = " + isCompOn);
-        System.out.println("3. есть равные цифры? = " + isEqualNumbsInIt);
-        System.out.println("4. (что-либо) создано? = " + isCreatSomth);
-        System.out.println("5. (что-либо) пусто? = " + isEmptySomth);
-        System.out.println("6. (что-либо) активный? = " + isActiveSomth);
-        System.out.println("7. новый? = " + isItNew);
-        System.out.println("8. электронная почта действительная? = " + isEmailValid);
-        System.out.println("9. имеются уникальные строки? = " + isUniqStringInIt);
-        System.out.println("29. количество чисел в каждой строке = " + isNumbSumEachLine + "\n");
+        // сотни равны?
+        boolean isEqualHundred = true;
+        // компьютер включен?
+        boolean isComputerOn = true;
+        // есть равные цифры?
+        boolean areEqualNumbersHere = true;
+        // (что-либо) создано?
+        boolean isCreate = true;
+        // (что-либо) пусто?
+        boolean isEmpty = true;
+        // (что-либо) активный?
+        boolean isActive = true;
+        // новый?
+        boolean isNew = true;
+        // электронная почта действительная?
+        boolean isEmailValid = true;
+        // имеются уникальные строки?
+        boolean isUniqueStringHere = true;
 
-        System.out.println("1. старый universally unique identifier = " + uuid);
-        System.out.println("2. производитель оперативной памяти = " + drum);
-        System.out.println("3. емкость жесткого диска = " + hdd);
-        System.out.println("4. протокол передачи гипертекста = " + http);
-        System.out.println("5. сокращенный uniform resource locator = " + url);
-        System.out.println("6. новый идентификатор клиента = " + uci);
-        System.out.println("7. кодировка american standard code for information interchange = " + ascii);
+        System.out.println("2. boolean-переменные");
+        System.out.println("сотни равны? = " + isEqualHundred);
+        System.out.println("компьютер включен? = " + isComputerOn);
+        System.out.println("есть равные цифры? = " + areEqualNumbersHere);
+        System.out.println("(что-либо) создано? = " + isCreate);
+        System.out.println("(что-либо) пусто? = " + isEmpty);
+        System.out.println("(что-либо) активный? = " + isActive);
+        System.out.println("новый? = " + isNew);
+        System.out.println("электронная почта действительная? = " + isEmailValid);
+        System.out.println("имеются уникальные строки? = " + isUniqueStringHere);
+
+        // старый universally unique identifier
+        String uuidOld = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11";
+        // производитель оперативной памяти
+        String drum = "SK Hynix";
+        // емкость жесткого диска
+        String hdd = "0.5 TB";
+        // протокол передачи гипертекста
+        String http = "http//topjava.ru/";
+        // сокращенный uniform resource locator
+        String urlAbbreviated = "http//topjava.ru/";
+        // новый идентификатор клиента
+        String uciNew = "IK9478H94I0";
+        // кодировка american standard code for information interchange
+        String ascii = "American standard code for information interchange";
+
+        System.out.println("3. Аббревиатуры");
+        System.out.println("старый universally unique identifier = " + uuidOld);
+        System.out.println("производитель оперативной памяти = " + drum);
+        System.out.println("емкость жесткого диска = " + hdd);
+        System.out.println("протокол передачи гипертекста = " + http);
+        System.out.println("сокращенный uniform resource locator = " + urlAbbreviated);
+        System.out.println("новый идентификатор клиента = " + uciNew);
+        System.out.println("кодировка american standard code for information interchange = " + ascii);
     }
 }
