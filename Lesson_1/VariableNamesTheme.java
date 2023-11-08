@@ -12,7 +12,7 @@ public class VariableNamesTheme {
         // максимальное число
         byte maxNumber = Byte.MAX_VALUE;
         // количество десятков
-        int teansNumbers = 8;
+        int countTeans = 8;
         // вес собаки
         float dogWeight = 10.3f;
         // исходное число
@@ -20,13 +20,13 @@ public class VariableNamesTheme {
         // процент по вкладу
         float interestOnDeposit = 10.5f;
         // (переменная хранит символ) &
-        char specialSimbolAnd = '\u0026';
+        char ampersand = '&';
         // код ошибки
         int errorCode = 404;
         // тип сообщения
         String massegeType = "string";
         // число нулей
-        int zerosNumbers = 18;
+        int countZeros = 18;
         // уникальное число
         double uniqueNumber = 85987715.56632478855174d;
         // случайное число
@@ -34,7 +34,7 @@ public class VariableNamesTheme {
         // математическое выражение
         float mathExpression = (2^3 + 18 - 4)^(-3) / 631;
         // выбор чего-либо
-        String choose = "Шоколад или мороженое";
+        String choice = "Шоколад или мороженое";
         // количество очков (в игре)
         int score = 21;
         // максимальная длина строки
@@ -66,18 +66,18 @@ public class VariableNamesTheme {
         System.out.println("2. сумма чисел = " + sumNumbers);
         System.out.println("3. произведение цифр = " + productNumbers);
         System.out.println("4. максимальное число = " + maxNumber);
-        System.out.println("5. количество десятков = " + teansNumbers);
+        System.out.println("5. количество десятков = " + countTeans);
         System.out.println("6. вес собаки = " + dogWeight);
         System.out.println("7. исходное число = " + originalNumber);
         System.out.println("8. процент по вкладу = " + interestOnDeposit);
-        System.out.println("9. (переменная хранит символ) & = " + specialSimbolAnd);
+        System.out.println("9. (переменная хранит символ) & = " + ampersand);
         System.out.println("10. код ошибки = " + errorCode);
         System.out.println("11. тип сообщения = " + massegeType);
-        System.out.println("12. число нулей = " + zerosNumbers);
+        System.out.println("12. число нулей = " + countZeros);
         System.out.println("13. уникальное число = " + uniqueNumber);
         System.out.println("14. случайное число = " + randomNumber);
         System.out.println("15. математическое выражение = " + mathExpression);
-        System.out.println("16. выбор чего-либо = " + choose);
+        System.out.println("16. выбор чего-либо = " + choice);
         System.out.println("17. количество очков (в игре) = " + score);
         System.out.println("18. максимальная длина строки = " + maxLength);
         System.out.println("19. пункт меню = " + menuItem);
