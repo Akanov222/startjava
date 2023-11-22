@@ -7,18 +7,21 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Пол мужской");
         }
+
         int age = 30;
         if (age > 18) {
             System.out.println("Совершеннолетний");
         } else {
             System.out.println("Несовершеннолетний");
         }
+
         double height = 1.83;
         if (height < 1.8) {
             System.out.println("Рост ниже среднего");
         } else {
             System.out.println("Рост средний");
         }
+
         char firstLetterName = "Name".charAt(0);
         if (firstLetterName == 'M') {
             System.out.println("Первая буква имени \"М\"");
@@ -40,35 +43,36 @@ public class IfElseStatementTheme {
         }
 
         System.out.println("3. Проверка числа");
-        int c = 11;
+        int checkingNumber = 11;
         String property1 = "свойство";
         String property2 = "свойство";
-        if (c % 2 == 0) {
-            property2 = "четным";
+        if (checkingNumber == 0) {
+            System.out.println(checkingNumber + " является нулем\n");
         } else {
-            property2 = "нечетным";
-        }
-        if (c == 0) {
-        } else {
-            if (c > 0) {
+            if (checkingNumber % 2 == 0) {
+                property2 = "четным";
+            } else {
+                property2 = "нечетным";
+            }
+            if (checkingNumber > 0) {
                 property1 = "положительным";
             } else {
                 property1 = "отрицательным";
             }
-            System.out.println(c + " является " + property1 + " и " + property2 + "\n");
+            System.out.println(checkingNumber + " является " + property1 + " и " + property2 + "\n");
         }
 
         System.out.println("4. Поиск одинаковых цифр в числах");
-        int d = 123;
-        int f = 223;
-        int hundreds1 = d / 100;
-        int hundreds2 = f / 100;
-        int tens1 = (d / 10) % 10;
-        int tens2 = (f / 10) % 10;
-        int ones1 = d % 10;
-        int ones2 = f % 10;
+        int newNumber1 = 123;
+        int newNumber2 = 223;
+        int hundreds1 = newNumber1 / 100;
+        int hundreds2 = newNumber2 / 100;
+        int tens1 = (newNumber1 / 10) % 10;
+        int tens2 = (newNumber2 / 10) % 10;
+        int ones1 = newNumber1 % 10;
+        int ones2 = newNumber2 % 10;
         if ((hundreds1 == hundreds2) || (tens1 == tens2) || (ones1 == ones2)) {
-            System.out.println("Исходные числа " + d + " и " + f);
+            System.out.println("Исходные числа " + newNumber1 + " и " + newNumber2);
             if (hundreds1 == hundreds2) {
                 System.out.println("Одинаковые цифры " + hundreds1 + ". Номер разряда 3.");
             }
@@ -80,26 +84,38 @@ public class IfElseStatementTheme {
             }
             System.out.println();
         } else {
-            System.out.println("У чисел " + d + " и " + f + " одинаковые числа в соответствующих разрядах " +
-                    "отсутствуют\n");
+            System.out.println("У чисел " + newNumber1 + " и " + newNumber2 + 
+                " одинаковые числа в соответствующих разрядах " + "отсутствуют\n");
         }
 
         System.out.println("5. Определение символа по его коду");
-        char g = '8';
+        char newSimbol = '8';
         String propertySymbol = "не буквой и не цифрой";
-        if (g == 'g' || g == 'b' || g == 'c' || g == 'd' || g == 'e' || g == 'f' || g == 'h' || g == 'g' || g == 'i' ||
-                g == 'j' || g == 'k' || g == 'l' || g == 'm' || g == 'n' || g == 'o' || g == 'p' || g == 'q' || g ==
-                'r' || g == 's' || g == 't' || g == 'u' || g == 'v' || g == 'w' || g == 'x' || g == 'y' | g == 'z') {
+        if (newSimbol == 'g' || newSimbol == 'b' || newSimbol == 'c' || newSimbol == 'd' || 
+            newSimbol == 'e' || newSimbol == 'f' || newSimbol == 'h' || newSimbol == 'g' || 
+            newSimbol == 'i' || newSimbol == 'j' || newSimbol == 'k' || newSimbol == 'l' || 
+            newSimbol == 'm' || newSimbol == 'n' || newSimbol == 'o' || newSimbol == 'p' || 
+            newSimbol == 'q' || newSimbol == 'r' || newSimbol == 's' || newSimbol == 't' || 
+            newSimbol == 'u' || newSimbol == 'v' || newSimbol == 'w' || newSimbol == 'x' || 
+            newSimbol == 'y' | newSimbol == 'z')
+        {
             propertySymbol = "маленькой буквой";
-        } else if (g == 'A' || g == 'B' || g == 'C' || g == 'D' || g == 'E' || g == 'F' || g == 'H' || g == 'G' || g == 'I' ||
-                g == 'J' || g == 'K' || g == 'L' || g == 'M' || g == 'N' || g == 'O' || g == 'P' || g == 'Q' || g ==
-                'R' || g == 'S' || g == 'T' || g == 'U' || g == 'V' || g == 'W' || g == 'X' || g == 'Y' | g == 'Z') {
+        } else if (newSimbol == 'A' || newSimbol == 'B' || newSimbol == 'C' || newSimbol == 'D' || 
+            newSimbol == 'E' || newSimbol == 'F' || newSimbol == 'H' || newSimbol == 'G' || 
+            newSimbol == 'I' || newSimbol == 'J' || newSimbol == 'K' || newSimbol == 'L' || 
+            newSimbol == 'M' || newSimbol == 'N' || newSimbol == 'O' || newSimbol == 'P' || 
+            newSimbol == 'Q' || newSimbol == 'R' || newSimbol == 'S' || newSimbol == 'T' || 
+            newSimbol == 'U' || newSimbol == 'V' || newSimbol == 'W' || newSimbol == 'X' || 
+            newSimbol == 'Y' | newSimbol == 'Z')
+        {
             propertySymbol = "большой буквой";
-        } else if (g == '0' || g == '1' || g == '2' || g == '3' || g == '4' || g == '5' || g == '6' || g == '7' || g == '8' ||
-                g == '9') {
+        } else if (newSimbol == '0' || newSimbol == '1' || newSimbol == '2' || newSimbol == '3' || 
+            newSimbol == '4' || newSimbol == '5' || newSimbol == '6' || newSimbol == '7' || 
+            newSimbol == '8' || newSimbol == '9')
+        {
             propertySymbol = "цифрой";
         }
-        System.out.println("Символ " + g + " является " + propertySymbol + "\n");
+        System.out.println("Символ " + newSimbol + " является " + propertySymbol + "\n");
 
         System.out.println("6.Подсчет суммы вклада и начисленных банком %");
         int sum = 301000;
