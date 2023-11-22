@@ -1,12 +1,12 @@
 public class VariablesTheme {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println("1. Вывод характеристик компьютера");
-        byte processorCoresNumber = 5;
-        System.out.println("CPU cores: " + processorCoresNumber);
-        short hardDiskMemory = 500;
-        System.out.println("SSD memory: " + hardDiskMemory + " MB");
-        int operationMemory = 48;
-        System.out.println("RAM memory: " + operationMemory + " GB");
+        byte cpuCores = 5;
+        System.out.println("CPU cores: " + cpuCores);
+        short hddMemory = 500;
+        System.out.println("SSD memory: " + hddMemory + " MB");
+        int ramMemory = 48;
+        System.out.println("RAM memory: " + ramMemory + " GB");
         double displaySize = 15.6;
         System.out.println("Display size: " + displaySize + "''");
         float computerPrice = 1094.99f;
@@ -27,62 +27,51 @@ public class VariablesTheme {
 
         System.out.println("3. Вывод слова JAVA");
         System.out.println(
-                "   J    a  v     v  a\n" +
-                        "   J   a a  v   v  a a\n" +
-                        "J  J  aaaaa  V V  aaaaa\n" +
-                        " JJ  a     a  V  a     a\n");
+            "   J    a  v     v  a\n" +
+            "   J   a a  v   v  a a\n" +
+            "J  J  aaaaa  V V  aaaaa\n" +
+            " JJ  a     a  V  a     a\n");
 
         System.out.println("4. Вывод min и max значений целых числовых типов");
-        byte numberByte = Byte.MAX_VALUE;
-        System.out.print(numberByte + ", ");
-        numberByte++;
-        System.out.print(numberByte + ", ");
-        numberByte--;
-        System.out.println(numberByte);
-        short numberShort = Short.MAX_VALUE;
-        System.out.print(numberShort + ", ");
-        numberShort++;
-        System.out.print(numberShort + ", ");
-        numberShort--;
-        System.out.println(numberShort);
-        int numberInt = Integer.MAX_VALUE;
-        System.out.print(numberInt + ", ");
-        numberInt++;
-        System.out.print(numberInt + ", ");
-        numberInt--;
-        System.out.println(numberInt);
-        long numberLong = Long.MAX_VALUE;
-        System.out.print(numberLong + ", ");
-        numberLong++;
-        System.out.print(numberLong + ", ");
-        numberLong--;
-        System.out.println(numberLong);
+        byte maxByte = Byte.MAX_VALUE;
+        System.out.print(maxByte++ + ", ");
+        System.out.print(maxByte-- + ", ");
+        System.out.println(maxByte);
+        short maxShort = Short.MAX_VALUE;
+        System.out.print(maxShort++ + ", ");
+        System.out.print(maxShort-- + ", ");
+        System.out.println(maxShort);
+        int maxInt = Integer.MAX_VALUE;
+        System.out.print(maxInt++ + ", ");
+        System.out.print(maxInt-- + ", ");
+        System.out.println(maxInt);
+        long maxLong = Long.MAX_VALUE;
+        System.out.print(maxLong++ + ", ");
+        System.out.print(maxLong-- + ", ");
+        System.out.println(maxLong + "\n");
 
         System.out.println("5. Перестановка значений переменных");
         System.out.println("Перестановка с помощью третьей переменной");
         int a = 2;
         int b = 5;
+        int temp;
         System.out.println("a = " + a + "\n" + "b = " + b);
-        int temp1 = a;
+        temp = a;
         a = b;
-        b = temp1;
+        b = temp;
         System.out.println("a = " + a + "\n" + "b = " + b);
         System.out.println("Перестановка с помощью арифметических операций");
-        int c = 2;
-        int d = 5;
-        System.out.println("c = " + c + "\n" + "d = " + d);
-        c *= d;
-        d = c / d;
-        c /= d;
-        System.out.println("c = " + c + "\n" + "d = " + d);
+        System.out.println("a = " + a + "\n" + "b = " + b);
+        a *= b;
+        b = a / b;
+        a /= b;
+        System.out.println("a = " + a + "\n" + "b = " + b);
         System.out.println("Перестановка с помощью побитовой операции ^");
-        int e = 2;
-        int f = 5;
-        System.out.println("e = " + e + "\n" + "f = " + f);
-        e ^= f;
-        f ^= e;
-        e ^= f;
-        System.out.println("e = " + e + "\n" + "f = " + f + "\n");
+        System.out.println("a = " + a + "\n" + "b = " + b);
+        a ^= b;
+        b ^= a;
+        a ^= b;
+        System.out.println("a = " + a + "\n" + "b = " + b + "\n");
 
         System.out.println("6. Вывод символов и их кодов");
         char dollar = '$';
@@ -102,31 +91,29 @@ public class VariablesTheme {
         char underscore = '_';
         char leftParenthesis = '(';
         char rightParenthesis = ')';
-        System.out.println(
-                "    " + slash + backslash + "\n" +
-                        "   " + slash + "  " + backslash + "\n" +
-                        "  " + slash + underscore + leftParenthesis + " " + rightParenthesis + backslash + "\n" +
-                        " " + slash + "      " + backslash + "\n" +
-                        slash + underscore + underscore + underscore + underscore + slash + backslash + underscore +
-                        underscore + backslash + "\n");
+        System.out.println("    " + slash + backslash + "\n" + "   " + slash + "  " + backslash + 
+            "\n" + "  " + slash + underscore + leftParenthesis + " " + rightParenthesis + 
+            backslash + "\n" + " " + slash + "      " + backslash + "\n" + slash + underscore + 
+            underscore + underscore + underscore + slash + backslash + underscore + 
+            underscore + backslash + "\n");
 
         System.out.println("8. Вывод количества сотен, десятков и единиц числа");
         int number = 123;
-        int units = number % 10;
+        int ones = number % 10;
         int tens = (number / 10) % 10;
-        int hundred = (number / 100) % 10;
+        int hundred = (number / 100);
         System.out.println("Число " + number + " содержит:");
         System.out.println(" сотен - " + hundred);
         System.out.println(" десятков - " + tens);
-        System.out.println(" единиц - " + units);
-        System.out.println("Сумма его цифр = " + (hundred + tens + units));
-        System.out.println("Произведение = " + hundred * tens * units + "\n");
+        System.out.println(" единиц - " + ones);
+        System.out.println("Сумма его цифр = " + (hundred + tens + ones));
+        System.out.println("Произведение = " + hundred * tens * ones + "\n");
 
         System.out.println("9. Вывод времени");
-        int newNumber = 86399;
-        int seconds = newNumber % 60;
-        int minutes = (newNumber / 60) % 60;
-        int hours = (newNumber / 60 / 60) % 24;
+        int newTimeValue = 86399;
+        int seconds = newTimeValue % 60;
+        int minutes = (newTimeValue / 60) % 60;
+        int hours = (newTimeValue / 3600);
         System.out.println(hours + ":" + minutes + ":" + seconds);
     }
 }
