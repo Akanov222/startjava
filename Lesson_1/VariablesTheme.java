@@ -1,12 +1,12 @@
 public class VariablesTheme {
-    public static void main(String[] args) { 
+    public static void main(String[] args) {
         System.out.println("1. Вывод характеристик компьютера");
         byte cpuCores = 5;
         System.out.println("CPU cores: " + cpuCores);
-        short hddMemory = 500;
-        System.out.println("SSD memory: " + hddMemory + " MB");
+        short hddSize = 500;
+        System.out.println("SSD size: " + hddSize + " MB");
         int ramMemory = 48;
-        System.out.println("RAM memory: " + ramMemory + " GB");
+        System.out.println("RAM size: " + ramMemory + " GB");
         double displaySize = 15.6;
         System.out.println("Display size: " + displaySize + "''");
         float computerPrice = 1094.99f;
@@ -54,9 +54,8 @@ public class VariablesTheme {
         System.out.println("Перестановка с помощью третьей переменной");
         int a = 2;
         int b = 5;
-        int temp;
+        int temp = a;
         System.out.println("a = " + a + "\n" + "b = " + b);
-        temp = a;
         a = b;
         b = temp;
         System.out.println("a = " + a + "\n" + "b = " + b);
@@ -110,10 +109,10 @@ public class VariablesTheme {
         System.out.println("Произведение = " + hundred * tens * ones + "\n");
 
         System.out.println("9. Вывод времени");
-        int newTimeValue = 86399;
-        int seconds = newTimeValue % 60;
-        int minutes = (newTimeValue / 60) % 60;
-        int hours = (newTimeValue / 3600);
+        int totalSeconds = 86399;
+        int seconds = totalSeconds % 60;
+        int minutes = (totalSeconds / 60) % 60;
+        int hours = (totalSeconds / 3600);
         System.out.println(hours + ":" + minutes + ":" + seconds);
     }
 }
