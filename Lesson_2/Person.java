@@ -6,10 +6,10 @@ public class Person {
     String gender = "Male";
     
     void move() {
-        System.out.println(name + " move");
+        System.out.println("move");
     }
     void run() {
-        System.out.println(name + " run");
+        System.out.println("run");
     }
     void sit() {
         System.out.println("sit");
