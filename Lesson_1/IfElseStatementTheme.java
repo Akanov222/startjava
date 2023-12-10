@@ -47,7 +47,7 @@ public class IfElseStatementTheme {
         String property1 = "отрицательным";
         String property2 = "нечетным";
         if (checkingNumber == 0) {
-            System.out.println(checkingNumber + " является нулем\n");
+            System.out.println(checkingNumber + " является ни положительным ни отрицательным\n");
         } else {
             if (checkingNumber % 2 == 0) {
                 property2 = "четным";
@@ -81,7 +81,7 @@ public class IfElseStatementTheme {
             System.out.println();
         } else {
             System.out.println("У чисел " + number1 + " и " + number2 +
-                " одинаковые числа в соответствующих разрядах " + "отсутствуют\n");
+                    " одинаковые числа в соответствующих разрядах " + "отсутствуют\n");
         }
 
         System.out.println("5. Определение символа по его коду");
@@ -89,21 +89,15 @@ public class IfElseStatementTheme {
         System.out.println((int)simbol);
         System.out.println((int)'g');
         System.out.println((int)'z');
-        String propertySymbol = "не буквой и не цифрой";
-        if ((int)simbol >= (int)'a') {
-            if ((int)simbol <= (int)'z') {
-                propertySymbol = "маленькой буквой";
-            }
-        } else if ((int)simbol >= (int)'A') {
-            if ((int)simbol <= (int)'Z') {
-                propertySymbol = "большой буквой";
-            }
-        } else if ((int)simbol >= (int)'0') {
-            if ((int)simbol <= (int)'9'){
-                propertySymbol = "цифрой";
-            }
+        String state = "не буквой и не цифрой";
+        if (simbol >= 'a' && simbol <='z') {
+            state = "маленькой буквой";
+        } else if (simbol >= 'A' && simbol <= 'Z') {
+            state = "большой буквой";
+        } else if (simbol >= '0' && simbol <= '9') {
+            state = "цифрой";
         }
-        System.out.println("Символ " + simbol + " является " + propertySymbol + "\n");
+        System.out.println("Символ " + simbol + " является " + state + "\n");
 
         System.out.println("6.Подсчет суммы вклада и начисленных банком %");
         int sum = 301000;
