@@ -5,8 +5,8 @@ public class VariablesTheme {
         System.out.println("CPU cores: " + cpuCores);
         short hddSize = 500;
         System.out.println("SSD size: " + hddSize + " MB");
-        int ramMemory = 48;
-        System.out.println("RAM size: " + ramMemory + " GB");
+        int ramSize = 48;
+        System.out.println("RAM size: " + ramSize + " GB");
         double displaySize = 15.6;
         System.out.println("Display size: " + displaySize + "''");
         float computerPrice = 1094.99f;
@@ -22,15 +22,15 @@ public class VariablesTheme {
         float sum = pricePen + priceBook;
         int discount = 11;
         System.out.println("Total = " + sum);
-        System.out.println("Discount = " + discount + "%");
+        System.out.println("Discount = " + sum * discount / 100);
         System.out.println("Total with discount = " + (sum - sum * discount / 100) + "\n");
 
         System.out.println("3. Вывод слова JAVA");
         System.out.println(
-            "   J    a  v     v  a\n" +
-            "   J   a a  v   v  a a\n" +
-            "J  J  aaaaa  V V  aaaaa\n" +
-            " JJ  a     a  V  a     a\n");
+                "   J    a  v     v  a\n" +
+                "   J   a a  v   v  a a\n" +
+                "J  J  aaaaa  V V  aaaaa\n" +
+                " JJ  a     a  V  a     a\n");
 
         System.out.println("4. Вывод min и max значений целых числовых типов");
         byte maxByte = Byte.MAX_VALUE;
@@ -90,11 +90,14 @@ public class VariablesTheme {
         char underscore = '_';
         char leftParenthesis = '(';
         char rightParenthesis = ')';
-        System.out.println("    " + slash + backslash + "\n" + "   " + slash + "  " + backslash + 
-            "\n" + "  " + slash + underscore + leftParenthesis + " " + rightParenthesis + 
-            backslash + "\n" + " " + slash + "      " + backslash + "\n" + slash + underscore + 
-            underscore + underscore + underscore + slash + backslash + underscore + 
-            underscore + backslash + "\n");
+        System.out.println("    " + slash + backslash + "\n"
+                + "   " + slash + "  " + backslash + "\n"
+                + "  " + slash + underscore + leftParenthesis
+                + " " + rightParenthesis + backslash + "\n"
+                + " " + slash + "      " + backslash + "\n"
+                + slash + underscore + underscore + underscore
+                + underscore + slash + backslash + underscore +
+                underscore + backslash + "\n");
 
         System.out.println("8. Вывод количества сотен, десятков и единиц числа");
         int number = 123;
