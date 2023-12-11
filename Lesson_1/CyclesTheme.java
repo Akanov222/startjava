@@ -172,7 +172,7 @@ public class CyclesTheme {
         count = 0;
         int calc;
         for (i = 0; i < numDigits / 2; i++) {
-            calc = Main.pow(10,(numDigits - 1 - i*2));
+            calc = CyclesTheme.pow(10,(numDigits - 1 - i*2));
             digitFirst = tmp % 10;
             digitLast = tmp / calc;
             if (digitFirst == digitLast) {
