@@ -32,7 +32,7 @@ public class CyclesTheme {
         }
         if (number3>middle) {
             max = number3;
-        } else if(min<number3 && number3<=middle) {
+        } else if (min < number3 && number3 <= middle) {
             max = middle;
             middle = number3;
         } else {
@@ -40,7 +40,7 @@ public class CyclesTheme {
             middle = min;
             min = number3;
         }
-        for (int i = max-1; i > min; i--) {
+        for (int i = max - 1; i > min; i--) {
             System.out.print(i + " ");
         }
         System.out.println("\n");
@@ -49,9 +49,9 @@ public class CyclesTheme {
         int number = 1234;
         int digit;
         tmp = 1000;
-        while (tmp>0)
+        while (tmp > 0)
         {
-            digit = (number/tmp)%10;
+            digit = (number / tmp) % 10;
             System.out.print(digit);
             number -= (digit * tmp);
             tmp /= 10;
@@ -86,14 +86,14 @@ public class CyclesTheme {
         tmp = number;
         String evenOrOdd = " нечетное ";
         for (int i = 1; i <= numDigits; i++) {
-            digit = tmp%10;
+            digit = tmp % 10;
             if (digit == 2) {
                 count++;
             }
             tmp = (tmp - digit) / 10;
         }
-        if (count%2 ==1) {
-        } else if (count%2 == 0 && count != 0) {
+        if (count%2 == 1) {
+        } else if (count % 2 == 0 && count != 0) {
             evenOrOdd = " четное ";
         } else evenOrOdd = " ";
         System.out.println("В " + number + evenOrOdd + "количество двоек - " + count + "\n");
@@ -130,7 +130,7 @@ public class CyclesTheme {
             j--;
             i++;
             System.out.println();
-            if (j ==-3) {
+            if (j == -3) {
                 j = Math.abs(j);
             }
             if (j == 0) {
@@ -150,7 +150,7 @@ public class CyclesTheme {
             if (numChar == 48) {
                 numChar = 97;
             }
-            if (numChar%2==1) {
+            if (numChar%2 == 1) {
                 simbol = (char)numChar;
                 System.out.printf(" %6s", numChar);
                 System.out.print("   ");
@@ -178,7 +178,7 @@ public class CyclesTheme {
             if (digitFirst == digitLast) {
                 count++;
             }
-            tmp = (tmp - digitLast * calc)/10;
+            tmp = (tmp - digitLast * calc) / 10;
         }
         if (count == numDigits / 2) {
             resultCheck = "является";
@@ -220,7 +220,7 @@ public class CyclesTheme {
         System.out.printf(" %23S %n", "таблица  пифагора");
         for (i = 1; i < 10; i++) {
             for (j = 1; j < 10; j++) {
-                if ((i == 1)&&(j == 1)) {
+                if ((i == 1) && (j == 1)) {
                     System.out.print("   ");
                 }
                 else {
