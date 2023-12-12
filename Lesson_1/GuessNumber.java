@@ -2,21 +2,18 @@ public class GuessNumber {
     public static void main(String[] args) {
         // guessNumber (0, 100]
         int guessNumber = 8;
-        int result = 1;
-        while (result != guessNumber) {
-            if (result > guessNumber) {
-                System.out.println("Число " + result + " больше того, что загадал компьютер");
+        int attempt = 1;
+        while (attempt != guessNumber) {
+            if (attempt > guessNumber) {
+                System.out.println("Число " + attempt + " больше того, что загадал компьютер");
+            } else if (attempt < guessNumber) {
+                System.out.println("Число " + attempt + " меньше того, что загадал компьютер");
+            } else if (attempt <= 0) {
+                attempt += 1;
+            } else if (attempt > 100) {
+                attempt -= 100;
             }
-            if (result < guessNumber) {
-                System.out.println("Число " + result + " меньше того, что загадал компьютер");
-            }
-            if (result <= 0) {
-                result += 1;
-            }
-            if (result > 100) {
-                result -= 114;
-            }
-            result++;
+            attempt++;
         }
         System.out.println("Вы победили!");
     }
