@@ -1,29 +1,30 @@
 public class Calculator {
     public static void main(String[] args) {
         System.out.println("1. Калькулятор");
-        int number1 = 8;
-        int number2 = 2;
-        Character sign = '^';
+        int a = 8;
+        int b = 2;
+        String sign = "^";
         int result = 0;
-        if (sign.equals('*')) {
-            result = number1 * number2;
-        } else if (sign.equals('/')) {
-            result = number1 / number2;
-        } else if (sign.equals('+')) {
-            result = number1 + number2;
-        } else if (sign.equals('-')) {
-            result = number1 - number2;
-        } else if (sign.equals('^')) {
-            result = Calculator.pow(number1, number2);
-        } else if (sign.equals('%')) {
-            result = number1 % number2;
+        if (sign.equals("*")) {
+            result = a * b;
+        } else if (sign.equals("/")) {
+            result = a / b;
+        } else if (sign.equals("+")) {
+            result = a + b;
+        } else if (sign.equals("-")) {
+            result = a - b;
+        } else if (sign.equals("^")) {
+            result = pow(a, b);
+        } else if (sign.equals("%")) {
+            result = a % b;
         }
-        System.out.println(number1 + " " + sign + " " + number2 + " = " + result);
+        System.out.println(a + " " + sign + " " + b + " = " + result);
     }
-    public static int pow(int value, int powValue) {
+
+    private static int pow(int value, int powValue) {
         int result = 1;
         for (int i = 0; i < powValue; i++) {
-            result = result * value;
+            result *= value;
         }
         return result;
     }
