@@ -86,9 +86,6 @@ public class IfElseStatementTheme {
 
         System.out.println("5. Определение символа по его коду");
         char simbol = '8';
-        System.out.println((int)simbol);
-        System.out.println((int)'g');
-        System.out.println((int)'z');
         String state = "не буквой и не цифрой";
         if (simbol >= 'a' && simbol <='z') {
             state = "маленькой буквой";
