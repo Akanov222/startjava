@@ -23,7 +23,7 @@ public class GuessNumber {
                 System.out.println("Число " + attempt + " больше того, что загадал компьютер");
             } else if (attempt < guessNumber) {
                 System.out.println("Число " + attempt + " меньше того, что загадал компьютер");
-        }
+            }
         }
         System.out.println("Вы победили!");
         System.out.println("Загаданное число " + getGuessNumber());
