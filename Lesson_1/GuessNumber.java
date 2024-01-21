@@ -9,7 +9,7 @@ public class GuessNumber {
             } else if (attempt < guessNumber) {
                 System.out.println("Число " + attempt + " меньше того, что загадал компьютер");
             } else if (attempt <= 0) {
-                attempt += 1;
+                attempt++;
             } else if (attempt > 100) {
                 attempt -= 100;
             }
